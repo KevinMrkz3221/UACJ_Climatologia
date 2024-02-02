@@ -1,5 +1,5 @@
 from django.db import models
-from core.estacion.models import Station
+from core.station.models import Station
 
 from django.contrib.auth.models import User
 

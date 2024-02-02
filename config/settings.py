@@ -50,8 +50,8 @@ OWN_APPS = [
     'core',
     'core.authenticate',
     'core.home',
-    'core.estacion',
-    'core.mantenimiento'
+    'core.station',
+    'core.maintenance'
 ]
 
 INSTALLED_APPS = BASE_APPS + OWN_APPS
