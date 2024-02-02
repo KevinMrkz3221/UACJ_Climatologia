@@ -1,0 +1,15 @@
+{% extends '_authorized.html' %}
+
+
+{% block content %}
+
+<form action="" method="post"> {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <a href="{% url 'estacion-list' %}">Volver</a>
+    <button type="submit">Agregar</button>
+</form>
+
+
+{% endblock %}

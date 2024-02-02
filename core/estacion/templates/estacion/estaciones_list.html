@@ -1,0 +1,19 @@
+{% extends '_authorized.html' %}
+
+{% block content %}
+<ul>
+    {% for estacion in estaciones %}
+    <li> 
+        {{ estacion.name }} 
+        <nav>
+            <a href="{% url 'estacion-delete' pk=estacion.id %}">Borrar</a>
+            <a href="{% url 'estacion-update' pk=estacion.id %}">Actualizar</a>
+            <a href="{% url 'estacion-detail' pk=estacion.id %}">Ver</a>
+            <a href="">Matenimiento</a>
+        </nav>
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends '_authorized.html' %}
+
+
+{% block content %}
+    <form action="" method="post"> {% csrf_token %}
+        <p>
+            Estas seguro que quieres eliminar la estación '{{ estacion.name }}'?
+        </p>
+        * No podras recuperar este elemento
+
+        <a href="{% url 'estacion-list' %}">Volver</a>
+        <button type="submit">Eliminar</button>
+    </form>
+{% endblock %}
